@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
+using static System.Console;
 namespace Sprint_0_Warm_Up
 {
     public class Airplane : AerialVehicle
     {
         public Airplane()
         {
-
+            MaxAltitude = 41000;
+            PlaneType = "OOPFlyingVehicle.Airplane";
         }
     }
 }
+

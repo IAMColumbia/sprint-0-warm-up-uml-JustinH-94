@@ -1,10 +1,10 @@
 ﻿using System;
 using static System.Console;
-
 namespace Sprint_0_Warm_Up
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             Tester t = new Tester();
@@ -13,6 +13,7 @@ namespace Sprint_0_Warm_Up
 
         class Tester
         {
+
             public void Test()
             {
                 WriteLine("Flying Vehicle Tester......................................................");
@@ -50,11 +51,13 @@ namespace Sprint_0_Warm_Up
                 WriteLine("Call ap.FlyUp() fly to 1,000ft default");
                 ap.FlyUp();    //Fly up tp 1,000 ft
                 WriteLine(ap.About());
+
                 WriteLine("\nCall ap.FlyUp(44000) Fly up to 45,000ft:");
                 ap.FlyUp(44000);    //Fly up tp 45,000 ft shouldn't work
                 WriteLine(ap.About());
+
                 WriteLine("\nCall ap.FlyUp(44000) Fly up another 40,000ft shouldn't work");
-                ap.FlyUp(40000);    //Fly up tp 41,000 ft shouldn't work
+                ap.FlyUp(44000);    //Fly up tp 41,000 ft shouldn't work
                 WriteLine(ap.About());
                 /*
                  * Output:
