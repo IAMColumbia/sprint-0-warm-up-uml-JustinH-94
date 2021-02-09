@@ -46,7 +46,11 @@ namespace Sprint_0_Warm_Up
 
         public string Land(List<AerialVehicle> landing)
         {
-            return $"{landing} is about to land at the airport.";
+            foreach(AerialVehicle a in landing)
+            {
+                Land(a);
+            }
+            return $"All vehicles have landed.";
         }
 
         public string TakeOff(AerialVehicle a)
