@@ -11,7 +11,9 @@
 
         public string About()
         {
-            return "";
+            if (isStarted)
+                return "Engine is starting.";
+            return "Engine has not started.";
         }
 
         public void Start()

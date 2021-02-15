@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sprint_0_Warm_Up
 {
-    class ToyPlane : Airplane
+    public class ToyPlane : Airplane
     {
         bool isWoundUp;
 
@@ -25,7 +25,7 @@ namespace Sprint_0_Warm_Up
                  $"{PlaneType} engine is started\n";
             }
             return "Output AirplaneAbout:\n" +
-                 $"This OOPFlyingVehicle.Airplane has a max altitude of {MaxAltitude} ft.\n" +
+                 $"This {PlaneType} has a max altitude of {MaxAltitude} ft.\n" +
                  $"It's current altitude is {CurrentAltitude} ft.\n" +
                  $"{PlaneType} engine is not started\n";
         }
